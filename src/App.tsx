@@ -4,6 +4,8 @@ import { ApolloClient, InMemoryCache, HttpLink, ApolloProvider} from '@apollo/cl
 import Navbar from './Navbar';
 import Home from './Home';
 import Create from './Create';
+import PostDetail from './PostDetail';
+import NotFound from './NotFound';
 
 const client= new ApolloClient({
   cache: new InMemoryCache(),
@@ -28,6 +30,12 @@ function App() {
               </Route>
               <Route path="/create">
                 <Create/>
+              </Route>
+              <Route path="/posts/:idx">
+                <PostDetail/>
+              </Route>
+              <Route path="*">
+                <NotFound/>
               </Route>
             </Switch>
           </div>

@@ -43,7 +43,7 @@
 }
 .post-preview h2 {
   font-size: 20px;
-  color: #f1356d;
+  color: #610b25;
   margin-bottom: 8px;
 }
 .post-preview a{
@@ -74,6 +74,24 @@
   display: block;
 }
 .create button {
+  background: #f1356d;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* post details page */
+.post-details h2 {
+  font-size: 20px;
+  color: #f1356d;
+  margin-bottom: 10px;
+}
+.post-details div {
+  margin: 20px 0;
+}
+.post-details button {
   background: #f1356d;
   color: #fff;
   border: 0;
